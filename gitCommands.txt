@@ -60,4 +60,13 @@ when starting a new project :-
 - write git clone https://linkToTheRepositoryUgetItFromGithub.git/ 
 - whole project will be created in the particular dir mentioned above.
 
+
+$$$$$ SOME SOLVED ERRORS :-
+## git push error : rejected to update changes . 
+-  this might happen because u might have added a readme.md or licence file directly from github , and its not in git history about it . 
+- to solve this first : git pull originUrlName branchName { this will make everything equal on both areas { ur computer locally == github repo }
+or simply it will download the readme / license file to show in ur local dir now.
+- then second : git push -u originUrlName branchName 
+*****DONE******
+
  
