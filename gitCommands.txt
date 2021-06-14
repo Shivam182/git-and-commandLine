@@ -22,6 +22,7 @@ when starting a new project :-
 * git status : shows all the files and thier status in .git folder means shows which files in the particular folder are being tracked or not or which file ws deleted or updated 
 * touch anyFile.html :- creates a file in that folder named as anyFile.html
 * git add -A :- adds all the files to the stagging area in once only 
+* git add . :- to add all the files in the current directory 
 * git checkout fileName.html :- whatever last change u will have done in last commit it will return it to u in the file . 
 * for ex :- someone has tampered ur project and many of its files then we cannot do git checkout with every file . 
   for that we will use :-- git checkout -file
