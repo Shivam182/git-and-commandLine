@@ -32,12 +32,19 @@ when starting a new project :-
 * git diff :- it shows results which will be comparing the ongoing work in the file with the file which is in stagging area . 
 * WHAT ID U WANT TO COMPARE STAGGING AREA now to the LaST commit done then use :-   git diff --stagged
 * git commit -a -m 'anyMessage' :-   this will skip the stagging area and directly commit the changes done . 
-* DELETE A COMITTED FILE :- git rm waste.html || it will completely delete the file from stagging area and the .git folder [ means comitted files ]
+* DELETE A COMITTED FILE / {from git + github} :- git rm waste.html ||
+ it will completely delete the file from stagging area and the .git folder [ means comitted files ]
+ ALSO IF AFTER THIS U COMMIT , AND PUSH IT TO GITHUB , THEN IF THAT FILE EXISTED IN GITHUB REPO , THEN IT WILL ALSO REMOVE THAT . 
 * git rm --cached waste.html :- this will take ur file into untracked files means uncommit the file not delete the file. 
 * IGNORING SOME FILES FROM BEING TRACKED :- create a .gitIgnore file in the main directory folder of the project and in that file simply write the name of the file  which u want to ignore for ex:- myLogs.txt || thn wherever the files will be inside the main folder it will ignore it . 
    /myLogs.txt = only ignores the file in which gitignore file is present and nowhere else . 
    *.log just ignore all the files with extension .log anywhere 
    IF U WANT TO IGNORE A COMPLETE FOLDER :- folderName/
+SHOULD I TRACK / COMMIT THE IGNORE FILE ????
+ANS : its your choice , actually if u have collaborators , then they will download the code and if u have this file on the repo 
+then it will have predefined rules that which files /extension / folders{like node_modules} need not to be tracked , so everyone will have it now 
+else { if u have only private / no collabs then , u might not want everyone to see which files u are not adding here . so its matter of situation and choice .
+
 
 * git branch newBranchName :- for development we cretae a new branch out of the main branch after that we will merge . 
 * git checkout newBranchName :- it will take u to the newBranchName wherever u ready
