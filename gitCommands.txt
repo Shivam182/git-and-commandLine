@@ -1,0 +1,62 @@
+WHEN TO USE GIT :-
+ANS:- once u have coded the basic form of ur working app then upload it on the github and it will work as the main branch . 
+
+unTracked files :- those which git has not touched and are simple local files 
+Stagging :- means those files which r being tracked and are now ready to comit 
+comit a file :- means getting a file ready to upload in the repo.
+
+# remember once u modify a file then again u have to stage it by using git add fileName command
+# once u remove the file from git then it will becme an unTracked File So u have to use git add command 
+when starting a new project :- 
+
+* git init { initialization of git }
+
+* git user.name --global shivam { changes the current global user name }
+* git user.email --global shivam123@mMail.com { global current user's mail }
+* further u can store any other variable also like user.phoneNumber ,  user.age , user.anyField 
+* to see any of the value above of the current user , write   git config user.fieldName
+* ls :- shows list of all the files in that folder 
+* ls -lart :- shows the hidden files of the folder. 
+
+* git commit -m 'InitialCommit' || if u don't use -m and only use git commit then a new window will be opened and u have to write the commit message there and then , in the last line write :wq and ur commit is done with u given message , so in short its better to use the '-m'
+* git status : shows all the files and thier status in .git folder means shows which files in the particular folder are being tracked or not or which file ws deleted or updated 
+* touch anyFile.html :- creates a file in that folder named as anyFile.html
+* git add -A :- adds all the files to the stagging area in once only 
+* git checkout fileName.html :- whatever last change u will have done in last commit it will return it to u in the file . 
+* for ex :- someone has tampered ur project and many of its files then we cannot do git checkout with every file . 
+  for that we will use :-- git checkout -file
+  NOW ALL THE FILES WILL BE BACKED AS ACCORDING TO THE LAST COMMIT . 
+* git log :- shows all the commits to ur branch 
+* git log -5 :- shows last 5 commits 
+* git diff :- it shows results which will be comparing the ongoing work in the file with the file which is in stagging area . 
+* WHAT ID U WANT TO COMPARE STAGGING AREA now to the LaST commit done then use :-   git diff --stagged
+* git commit -a -m 'anyMessage' :-   this will skip the stagging area and directly commit the changes done . 
+* DELETE A COMITTED FILE :- git rm waste.html || it will completely delete the file from stagging area and the .git folder [ means comitted files ]
+* git rm --cached waste.html :- this will take ur file into untracked files means uncommit the file not delete the file. 
+* IGNORING SOME FILES FROM BEING TRACKED :- create a .gitIgnore file in the main directory folder of the project and in that file simply write the name of the file  which u want to ignore for ex:- myLogs.txt || thn wherever the files will be inside the main folder it will ignore it . 
+   /myLogs.txt = only ignores the file in which gitignore file is present and nowhere else . 
+   *.log just ignore all the files with extension .log anywhere 
+   IF U WANT TO IGNORE A COMPLETE FOLDER :- folderName/
+
+* git branch newBranchName :- for development we cretae a new branch out of the main branch after that we will merge . 
+* git checkout newBranchName :- it will take u to the newBranchName wherever u ready
+* git merge newBranchName :- this will merge branch into the master / main branch . 
+* git branch :- will show u the names of all the branch and ur current branch will be marked as green . 
+
+* git remote add origin URLofyourRepo :- now for this project url has been added || and also from now this URL will be named as 'origin'
+* git remote -v :- will show u a list of all url's with thier nicjnames written in front like here it was origin . 
+* git remote set-url origin NewUrl :- this will replace the old url with new one with the prevoius name . 
+
+
+
+** TO PUSH YOUR CODE INTO THE GITHUB REPO U HAVE TO FIRST GENERATE SSH KEYS WHICH U HAVE TO GENERATE ONLY ONCE FOR A PROJECT . 
+* git push -u origin main :- this will push the master or the main branch on the github 
+* git push -u origin anyBranchName :- this will push the branch into github  // but remember before pushing that u r urself in that branch . 
+
+## IF U WANT TO CLONE A REPOSITORY FROM GITHUB 
+- cd/ to dir where u want to clone the project 
+- open powershell in that dir 
+- write git clone https://linkToTheRepositoryUgetItFromGithub.git/ 
+- whole project will be created in the particular dir mentioned above.
+
+ 

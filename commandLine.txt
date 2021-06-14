@@ -1,0 +1,11 @@
+# some shortForms :
+1. cd = change directory 
+2. dir = all directories
+
+# commands :
+1. cd.. => takes cmd one step below in directories semantics 
+2. cd "dirName" => takes cmd to spec dir name if exists 
+3. cd dirName => takes cmd to next dir / one step above from prsent one /
+4. cd dir{pressTab} => automatically completes the dir name which is closest to written hint by you 
+5. writing $ before any command specfies that , whenevr the command is copied to some other cmd it will auto run , no need to hit enter 
+6. 
