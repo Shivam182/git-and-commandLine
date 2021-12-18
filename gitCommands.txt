@@ -76,4 +76,14 @@ or simply it will download the readme / license file to show in ur local dir now
 - then second : git push -u originUrlName branchName 
 *****DONE******
 
+
+## fatal : index.lock file exists 
+- This error can come at any command of git 
+- It comes because actually whenever you write a command the hidden .git/ folder automatically creates a index.lock file .
+- When the written command by you gets completed , the index.lock file automatically is removed
+- Many times these commands not get executed till last [ in my case it was sudden PC crash due to low charge ] 
+- So that index.lock file keeps there and is not deleted , and it prevents any further change if you try to do one after restarting the PC
+- WHy it stops any command ? Ans : actually index.lock file is made to prevent any kind of multi-changing at same time to same repo . So if its not deleted means git still thinks you are still doing that operation during which your PC crashed 
+- So simply run --> del .git\index.lock This will delete the index.lock file .
+
  
